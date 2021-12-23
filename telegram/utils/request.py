@@ -97,7 +97,7 @@ class Request:
     Telegram servers.
 
     Args:
-        con_pool_size (:obj:`int`): Number of connections to keep in the connection pool.
+        con_pool_size (:obj:`int`): Number of connections to keep in the connection pool. optimal value is 8. Defaults to 1.
         proxy_url (:obj:`str`): The URL to the proxy server. For example: `http://127.0.0.1:3128`.
         urllib3_proxy_kwargs (:obj:`dict`): Arbitrary arguments passed as-is to
             :obj:`urllib3.ProxyManager`. This value will be ignored if :attr:`proxy_url` is not
