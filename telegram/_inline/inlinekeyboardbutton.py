@@ -214,7 +214,7 @@ class InlineKeyboardButton(TelegramObject):
 
         return cls(**data)
 
-    def update_callback_data(self, callback_data: object) -> None:
+    def update_callback_data(self, callback_data: Union[str, object]) -> None:
         """
         Sets :attr:`callback_data` to the passed object. Intended to be used by
         :class:`telegram.ext.CallbackDataCache`.
